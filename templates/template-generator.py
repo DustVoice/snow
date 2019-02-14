@@ -9,193 +9,6 @@ def tohex(l,c,h):
 def phic(e):
   return 0.61803398875**e*100
 
-def print_terminal():
-  print 'verbatim'
-  print 'if has("nvim")'
-  print '  let g:terminal_color_0 = "@guigry0"'
-  print '  let g:terminal_color_1 = "@guired_"'
-  print '  let g:terminal_color_2 = "@guigren"'
-  print '  let g:terminal_color_3 = "@guigold"'
-  print '  let g:terminal_color_4 = "@guiblue"'
-  print '  let g:terminal_color_5 = "@guimgnt"'
-  print '  let g:terminal_color_6 = "@guicyan"'
-  print '  let g:terminal_color_7 = "@guigry3"'
-  print '  let g:terminal_color_8 = "@guigry1"'
-  print '  let g:terminal_color_9 = "@guired_"'
-  print '  let g:terminal_color_10 = "@guigren"'
-  print '  let g:terminal_color_11 = "@guigold"'
-  print '  let g:terminal_color_12 = "@guiblue"'
-  print '  let g:terminal_color_13 = "@guimgnt"'
-  print '  let g:terminal_color_14 = "@guicyan"'
-  print '  let g:terminal_color_15 = "@guigryc"'
-  print 'elseif has("terminal")'
-  print '  let g:terminal_ansi_colors = ['
-  print '      \ "@guigry0",'
-  print '      \ "@guired_",'
-  print '      \ "@guigren",'
-  print '      \ "@guigold",'
-  print '      \ "@guiblue",'
-  print '      \ "@guimgnt",'
-  print '      \ "@guicyan",'
-  print '      \ "@guigry3",'
-  print '      \ "@guigry1",'
-  print '      \ "@guired_",'
-  print '      \ "@guigren",'
-  print '      \ "@guigold",'
-  print '      \ "@guiblue",'
-  print '      \ "@guimgnt",'
-  print '      \ "@guicyan",'
-  print '      \ "@guigryc"'
-  print '  \ ]'
-  print 'endif'
-  print 'endverbatim'
-
-def print_dircolors():
-  print 'auxfile shell/dircolors'
-  print '                                  # file types displayed in normal text'
-  print '                                  # ---------------------------------+----------'
-  print 'FIFO                     36       # pipe                             | cyan'
-  print 'EXEC                     32       # executable                       | green'
-  print 'ORPHAN                   31       # broken symlink                   | red'
-  print ''
-  print ''
-  print '                                  # file types displayed in bold text'
-  print '                                  # ---------------------------------+----------'
-  print 'DIR                   01          # directory                        | uncolored'
-  print 'SOCK                  01;35       # socket                           | magenta'
-  print 'DOOR                  01;35       # door                             | magenta'
-  print 'BLK                   01;36       # block device driver              | cyan'
-  print 'CHR                   01;36       # character device driver          | cyan'
-  print ''
-  print ''
-  print '                                  # file types displayed with highlit background'
-  print '                                  # ---------------------------------+----------'
-  print 'SETUID                   30;45    # file that is setuid              | magenta'
-  print 'SETGID                   30;43    # file that is setgid              | yellow'
-  print 'CAPABILITY               30;41    # file with capability             | red'
-  print 'OTHER_WRITABLE           30;46    # other-writable, non-sticky dir   | cyan'
-  print 'STICKY                   30;44    # sticky, non-other-writable dir   | blue'
-  print 'STICKY_OTHER_WRITABLE    30;42    # sticky, other-writable dir       | green'
-  print ''
-  print '# for symlinks, use text styling of target file'
-  print 'LINK target'
-  print ''
-  print '# yellow archives'
-  print '.tar   33'
-  print '.tgz   33'
-  print '.arc   33'
-  print '.arj   33'
-  print '.taz   33'
-  print '.lha   33'
-  print '.lz4   33'
-  print '.lzh   33'
-  print '.lzma  33'
-  print '.tlz   33'
-  print '.txz   33'
-  print '.tzo   33'
-  print '.t7z   33'
-  print '.zip   33'
-  print '.z     33'
-  print '.dz    33'
-  print '.gz    33'
-  print '.lrz   33'
-  print '.lz    33'
-  print '.lzo   33'
-  print '.xz    33'
-  print '.zst   33'
-  print '.tzst  33'
-  print '.bz2   33'
-  print '.bz    33'
-  print '.tbz   33'
-  print '.tbz2  33'
-  print '.tz    33'
-  print '.deb   33'
-  print '.rpm   33'
-  print '.jar   33'
-  print '.war   33'
-  print '.ear   33'
-  print '.sar   33'
-  print '.rar   33'
-  print '.alz   33'
-  print '.ace   33'
-  print '.zoo   33'
-  print '.cpio  33'
-  print '.7z    33'
-  print '.rz    33'
-  print '.cab   33'
-  print '.wim   33'
-  print '.swm   33'
-  print '.dwm   33'
-  print '.esd   33'
-  print ''
-  print '# blue media files'
-  print '.aac   34'
-  print '.asf   34'
-  print '.au    34'
-  print '.avi   34'
-  print '.bmp   34'
-  print '.cgm   34'
-  print '.dl    34'
-  print '.emf   34'
-  print '.flac  34'
-  print '.flc   34'
-  print '.fli   34'
-  print '.flv   34'
-  print '.gif   34'
-  print '.gl    34'
-  print '.jpeg  34'
-  print '.jpg   34'
-  print '.m2v   34'
-  print '.m4a   34'
-  print '.m4v   34'
-  print '.mid   34'
-  print '.midi  34'
-  print '.mjpeg 34'
-  print '.mjpg  34'
-  print '.mka   34'
-  print '.mkv   34'
-  print '.mng   34'
-  print '.mov   34'
-  print '.mp3   34'
-  print '.mp4   34'
-  print '.mp4v  34'
-  print '.mpc   34'
-  print '.mpeg  34'
-  print '.mpg   34'
-  print '.nuv   34'
-  print '.oga   34'
-  print '.ogg   34'
-  print '.ogm   34'
-  print '.ogv   34'
-  print '.ogx   34'
-  print '.opus  34'
-  print '.pbm   34'
-  print '.pcx   34'
-  print '.pgm   34'
-  print '.png   34'
-  print '.ppm   34'
-  print '.qt    34'
-  print '.ra    34'
-  print '.rm    34'
-  print '.rmvb  34'
-  print '.spx   34'
-  print '.svg   34'
-  print '.svgz  34'
-  print '.tga   34'
-  print '.tif   34'
-  print '.tiff  34'
-  print '.vob   34'
-  print '.wav   34'
-  print '.webm  34'
-  print '.wmv   34'
-  print '.xbm   34'
-  print '.xcf   34'
-  print '.xpm   34'
-  print '.xspf  34'
-  print '.xwd   34'
-  print '.yuv   34'
-  print 'endauxfile'
-
 def print_airline(name,bg):
   print 'auxfile autoload/airline/themes/%s_%s.vim' % (name, bg)
   print 'let g:airline#themes#%s_%s#palette = {}' % (name, bg)
@@ -439,51 +252,47 @@ def print_fish(name,bg):
   print 'set fish_pager_color_prefix      @guimgnt'
   print 'endauxfile'
 
-hue_base = 255.00
+hue_red_ = 022.5
+hue_gold = 082.5
+hue_gren = 142.5
+hue_cyan = 202.5
+hue_blue = 262.5
+hue_mgnt = 322.5
 
-hue_red_ = 015.00
-hue_gold = 075.00
-hue_gren = 135.00
-hue_cyan = 195.00
-hue_blue = 255.00
-hue_mgnt = 315.00
+cro_ltacnt = phic(1.00)
+cro_dkacnt = phic(2.00)
 
-cro_ltacnt = phic(2.00)
-cro_dkacnt = phic(3.00)
+hexgry0_lt = tohex( phic(0.00) , phic(9999) , hue_blue )
+hexgry1_lt = tohex( phic(0.14) , phic(7.00) , hue_blue )
+hexgry2_lt = tohex( phic(1.46) , phic(4.25) , hue_blue )
+hexgry3_lt = tohex( phic(2.03) , phic(4.50) , hue_blue )
 
-hexgry0_lt = tohex( phic(0.00) , phic(7.00) , hue_base )
-hexgry1_lt = tohex( phic(0.16) , phic(6.66) , hue_base )
-hexgry2_lt = tohex( phic(1.46) , phic(5.31) , hue_base )
-hexgry3_lt = tohex( phic(1.99) , phic(5.49) , hue_base )
-hexgryc_lt = tohex( phic(2.45) , phic(5.99) , hue_base )
+hexgry0_dk = tohex( phic(3.50) , phic(5.50) , hue_blue )
+hexgry1_dk = tohex( phic(3.02) , phic(5.00) , hue_blue )
+hexgry2_dk = tohex( phic(1.02) , phic(4.50) , hue_blue )
+hexgry3_dk = tohex( phic(0.59) , phic(4.75) , hue_blue )
 
-hexgry0_dk = tohex( phic(3.50) , phic(8.31) , hue_base )
-hexgry1_dk = tohex( phic(2.97) , phic(6.93) , hue_base )
-hexgry2_dk = tohex( phic(1.02) , phic(5.49) , hue_base )
-hexgry3_dk = tohex( phic(0.63) , phic(5.89) , hue_base )
-hexgryc_dk = tohex( phic(0.37) , phic(6.29) , hue_base )
-
-hexred__lt = tohex( phic(1.50) , cro_ltacnt , hue_red_ )
-hexgold_lt = tohex( phic(1.50) , cro_ltacnt , hue_gold )
+hexred__lt = tohex( phic(1.42) , cro_ltacnt , hue_red_ )
+hexgold_lt = tohex( phic(1.43) , cro_ltacnt , hue_gold )
 hexgren_lt = tohex( phic(1.50) , cro_ltacnt , hue_gren )
-hexcyan_lt = tohex( phic(1.50) , cro_ltacnt , hue_cyan )
-hexblue_lt = tohex( phic(1.50) , cro_ltacnt , hue_blue )
-hexmgnt_lt = tohex( phic(1.50) , cro_ltacnt , hue_mgnt )
+hexcyan_lt = tohex( phic(1.67) , cro_ltacnt , hue_cyan )
+hexblue_lt = tohex( phic(1.75) , cro_ltacnt , hue_blue )
+hexmgnt_lt = tohex( phic(1.58) , cro_ltacnt , hue_mgnt )
 
-hexred__dk = tohex( phic(1.00) , cro_dkacnt , hue_red_ )
-hexgold_dk = tohex( phic(1.00) , cro_dkacnt , hue_gold )
-hexgren_dk = tohex( phic(1.00) , cro_dkacnt , hue_gren )
-hexcyan_dk = tohex( phic(1.00) , cro_dkacnt , hue_cyan )
+hexred__dk = tohex( phic(1.01) , cro_dkacnt , hue_red_ )
+hexgold_dk = tohex( phic(0.83) , cro_dkacnt , hue_gold )
+hexgren_dk = tohex( phic(0.92) , cro_dkacnt , hue_gren )
+hexcyan_dk = tohex( phic(0.98) , cro_dkacnt , hue_cyan )
 hexblue_dk = tohex( phic(1.00) , cro_dkacnt , hue_blue )
-hexmgnt_dk = tohex( phic(1.00) , cro_dkacnt , hue_mgnt )
+hexmgnt_dk = tohex( phic(0.96) , cro_dkacnt , hue_mgnt )
 
-hexsrch_lt = tohex( phic(0.50) , phic(2.00) , hue_gold )
-hexsrch_dk = tohex( phic(1.00) , phic(3.00) , hue_gold )
+hexsrch_lt = tohex( phic(0.25) , phic(0.25) , hue_gold )
+hexsrch_dk = tohex( phic(1.50) , phic(2.50) , hue_gold )
 
 lum_ltspel = phic(1.50)
-cro_ltspel = phic(1.50)
+cro_ltspel = phic(0.00)
 lum_dkspel = phic(0.75)
-cro_dkspel = phic(2.50)
+cro_dkspel = phic(0.75)
 
 hexsprd_lt = tohex( lum_ltspel , cro_ltspel , hue_red_ )
 hexspbl_lt = tohex( lum_ltspel , cro_ltspel , hue_blue )
@@ -507,9 +316,9 @@ print 'Color:      gry0 %s ~' % hexgry0_lt
 print 'Color:      gry1 %s ~' % hexgry1_lt
 print 'Color:      gry2 %s ~' % hexgry2_lt
 print 'Color:      gry3 %s ~' % hexgry3_lt
-print 'Color:      gryc %s ~' % hexgryc_lt
+print 'Color:      gryc %s ~' % hexgry1_dk
 print 'Color:      srch %s ~' % hexsrch_lt
-print 'Color:      grys %s ~' % hexgryc_lt
+print 'Color:      grys %s ~' % hexgry1_dk
 print 'Color:      gryp %s ~' % hexgry3_dk
 print 'Color:      sprd %s ~' % hexsprd_lt
 print 'Color:      spbl %s ~' % hexspbl_lt
@@ -522,8 +331,6 @@ print 'Color:      cyan %s ~' % hexcyan_lt
 print 'Color:      blue %s ~' % hexblue_lt
 print 'Color:      mgnt %s ~' % hexmgnt_lt
 print 'Include:    _common.colortemplate'
-print ''
-print_terminal()
 print ''
 print_airline('snow','light')
 print ''
@@ -538,9 +345,9 @@ print 'Color:      gry0 %s ~' % hexgry0_dk
 print 'Color:      gry1 %s ~' % hexgry1_dk
 print 'Color:      gry2 %s ~' % hexgry2_dk
 print 'Color:      gry3 %s ~' % hexgry3_dk
-print 'Color:      gryc %s ~' % hexgryc_dk
+print 'Color:      gryc %s ~' % hexgry1_lt
 print 'Color:      srch %s ~' % hexsrch_dk
-print 'Color:      grys %s ~' % hexgry0_dk
+print 'Color:      grys %s ~' % hexgry1_lt
 print 'Color:      gryp %s ~' % hexgry3_lt
 print 'Color:      sprd %s ~' % hexsprd_dk
 print 'Color:      spbl %s ~' % hexspbl_dk
@@ -554,8 +361,6 @@ print 'Color:      blue %s ~' % hexblue_dk
 print 'Color:      mgnt %s ~' % hexmgnt_dk
 print 'Include:    _common.colortemplate'
 print ''
-print_terminal()
-print ''
 print_airline('snow','dark')
 print ''
 print_lightline('snow','dark')
@@ -563,6 +368,3 @@ print ''
 print_shell('snow','dark')
 print ''
 print_fish('snow','dark')
-
-print ''
-print_dircolors()

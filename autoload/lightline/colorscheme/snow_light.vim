@@ -1,10 +1,10 @@
-let s:gry0 = [ "#fbffff", 231 ]
-let s:gry1 = [ "#e5ebf1", 255 ]
-let s:gry3 = [ "#535c65", 240 ]
-let s:red_ = [ "#ae5865", 131 ]
-let s:mgnt = [ "#8f63a2", 97 ]
-let s:gren = [ "#4d7f43", 65 ]
-let s:blue = [ "#2b7ab2", 32 ]
+let s:gry0 = [ "#ffffff", 231 ]
+let s:gry1 = [ "#e9edf3", 255 ]
+let s:gry3 = [ "#4e5a6b", 240 ]
+let s:red_ = [ "#d14354", 167 ]
+let s:mgnt = [ "#a54aaf", 133 ]
+let s:gren = [ "#00872c", 28 ]
+let s:blue = [ "#006ecd", 25 ]
 
 let s:p = { "normal" : {} , "inactive": {} , "insert"  : {} ,
           \ "replace": {} , "visual"  : {} , "tabline" : {} }
@@ -35,3 +35,4 @@ let s:p.normal.warning  = [[ s:mgnt, s:gry0 ]]
 
 let g:lightline#colorscheme#snow_light#palette =
   \ lightline#colorscheme#flatten(s:p)
+

@@ -3,24 +3,24 @@
 # Base16 Shell template by Chris Kempson (http://chriskempson.com)
 # snow_dark scheme by nightsense (https://github.com/nightsense/snow)
 
-color00="2c/2d/30" # Base 00 - Black
-color01="be/86/8c" # Base 08 - Red
-color02="7f/9d/77" # Base 0B - Green
-color03="ab/91/6d" # Base 0A - Yellow
-color04="75/9a/bd" # Base 0D - Blue
-color05="a8/8c/b3" # Base 0E - Magenta
-color06="5d/a1/9f" # Base 0C - Cyan
-color07="af/b7/c0" # Base 05 - White
-color08="36/3a/3e" # Base 03 - Bright Black
+color00="27/2e/37" # Base 00 - Black
+color01="d3/7b/7d" # Base 08 - Red
+color02="6b/aa/70" # Base 0B - Green
+color03="bc/9f/5e" # Base 0A - Yellow
+color04="64/9a/d8" # Base 0D - Blue
+color05="be/85/c3" # Base 0E - Magenta
+color06="03/a8/b0" # Base 0C - Cyan
+color07="b0/bb/cc" # Base 05 - White
+color08="30/39/45" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
 color10=$color02 # Base 0B - Bright Green
 color11=$color03 # Base 0A - Bright Yellow
 color12=$color04 # Base 0D - Bright Blue
 color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
-color15="cb/d2/d9" # Base 07 - Bright White
-color_foreground="af/b7/c0" # Base 05
-color_background="2c/2d/30" # Base 00
+color15="e9/ed/f3" # Base 07 - Bright White
+color_foreground="b0/bb/cc" # Base 05
+color_background="27/2e/37" # Base 00
 
 if [ -n "$TMUX" ]; then
   # Tell tmux to pass the escape sequences through
@@ -64,13 +64,13 @@ put_template 15 $color15
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
-  put_template_custom Pg afb7c0 # foreground
-  put_template_custom Ph 2c2d30 # background
-  put_template_custom Pi afb7c0 # bold color
-  put_template_custom Pj 759abd # selection color
-  put_template_custom Pk 2c2d30 # selected text color
-  put_template_custom Pl afb7c0 # cursor
-  put_template_custom Pm 2c2d30 # cursor text
+  put_template_custom Pg #b0bbcc # foreground
+  put_template_custom Ph #272e37 # background
+  put_template_custom Pi #b0bbcc # bold color
+  put_template_custom Pj #649ad8 # selection color
+  put_template_custom Pk #272e37 # selected text color
+  put_template_custom Pl #b0bbcc # cursor
+  put_template_custom Pm #272e37 # cursor text
 else
   put_template_var 10 $color_foreground
   if [ "$BASE16_SHELL_SET_BACKGROUND" != false ]; then
@@ -104,3 +104,4 @@ unset color14
 unset color15
 unset color_foreground
 unset color_background
+

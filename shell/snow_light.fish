@@ -1,47 +1,48 @@
 # snow_light fish shell theme by nightsense (https://github.com/nightsense/snow)
 
 # normal text
-set fish_color_host              535c65
-set fish_color_normal            535c65
-set fish_pager_color_completion  535c65
-set fish_pager_color_description 535c65
+set fish_color_host              4e5a6b
+set fish_color_normal            4e5a6b
+set fish_pager_color_completion  4e5a6b
+set fish_pager_color_description 4e5a6b
 
 # muted text
-set fish_color_autosuggestion    6d7782
-set fish_color_comment           6d7782
+set fish_color_autosuggestion    6a778b
+set fish_color_comment           6a778b
 
 # reverse muted
-set fish_pager_color_progress    fbffff --background=#6d7782
+set fish_pager_color_progress    ffffff --background=#6a778b
 
 # underlined text
 set fish_color_valid_path        --underline
 
 # highlit text
-set fish_color_match             --background=#afb7c0
-set fish_color_search_match      --background=#afb7c0
-set fish_color_selection         --background=#afb7c0
+set fish_color_match             --background=#b0bbcc
+set fish_color_search_match      --background=#b0bbcc
+set fish_color_selection         --background=#b0bbcc
 
 # red errors/warnings
-set fish_color_cancel            ae5865
-set fish_color_cwd_root          ae5865
-set fish_color_error             ae5865
+set fish_color_cancel            d14354
+set fish_color_cwd_root          d14354
+set fish_color_error             d14354
 
 # gold special elements
-set fish_color_redirection       906c33
-set fish_color_escape            906c33
-set fish_color_operator          906c33
-set fish_color_end               906c33
+set fish_color_redirection       967100
+set fish_color_escape            967100
+set fish_color_operator          967100
+set fish_color_end               967100
 
 # green commands/status
-set fish_color_command           4d7f43
-set fish_color_cwd               4d7f43
-set fish_color_user              4d7f43
+set fish_color_command           00872c
+set fish_color_cwd               00872c
+set fish_color_user              00872c
 
 # cyan parameters
-set fish_color_param             008483
+set fish_color_param             008190
 
 # blue quoted strings
-set fish_color_quote             2b7ab2
+set fish_color_quote             006ecd
 
 # magenta pager name match
-set fish_pager_color_prefix      8f63a2
+set fish_pager_color_prefix      a54aaf
+
